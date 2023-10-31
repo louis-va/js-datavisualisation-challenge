@@ -5848,26 +5848,6 @@ button.close {
     display: none !important;
   }
 }
-@font-face {
-  font-family: open_sanssemibold;
-  src: url(statexpflat/fonts/opensans/OpenSans-Semibold.ttf);
-}
-@font-face {
-  font-family: open_sansregular;
-  src: url(statexpflat/fonts/opensans/OpenSans-Regular.ttf);
-}
-@font-face {
-  font-family: open_sansbold;
-  src: url(statexpflat/fonts/opensans/OpenSans-Bold.ttf);
-}
-@font-face {
-  font-family: roboto_condensedregular;
-  src: url(statexpflat/fonts/roboto/RobotoCondensed-Regular.ttf);
-}
-@font-face {
-  font-family: roboto_condensedbold;
-  src: url(statexpflat/fonts/roboto/RobotoCondensed-Bold.ttf);
-}
 body {
   padding: 0;
   background-color: #999;
@@ -5893,14 +5873,8 @@ a:hover {
   color: #2873e6;
   text-decoration: underline;
 }
-#bodyContent a.external,
-#bodyContent a[href^="gopher://"] {
-  background: url(../media/external.png) center right no-repeat;
-  padding-right: 13px;
-}
 #bodyContent a[href^="https://"],
-.link-https {
-  background: url(../medialock_icon.gif) center right no-repeat;
+.link-https { 
   padding-right: 16px;
 }
 #bodyContent a[href^="mailto:"],
