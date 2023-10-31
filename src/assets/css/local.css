@@ -1,53 +1,57 @@
 a:lang(ar),
-    a:lang(ckb),
-    a:lang(kk-arab),
-    a:lang(mzn),
-    a:lang(ps),
-    a:lang(ur) {
-      text-decoration: none;
-    }
+a:lang(ckb),
+a:lang(kk-arab),
+a:lang(mzn),
+a:lang(ps),
+a:lang(ur) {
+  text-decoration: none;
+}
 
-    table {
-      font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-      font-size: 12px;
-      background: #fff;
-      margin: 2rem 0;
-      width: 480px;
-      border-collapse: collapse;
-      text-align: left;
-    }
+h4 {
+  margin-top: 20px;
+}
 
-    table thead th {
-      font-size: 14px;
-      font-weight: normal;
-      color: #039;
-      padding: 10px 8px;
-      border-bottom: 2px solid #6678b1;
-    }
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  background: #fff;
+  margin: 2rem 0;
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+}
 
-    table td {
-      color: #669;
-      padding: 9px 8px 0px 8px;
-      border: 1px solid #DDD;
+table thead th {
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  padding: 10px 8px;
+  border-bottom: 2px solid #6678b1;
+}
 
-    }
+table td {
+  color: #669;
+  padding: 9px 8px 0px 8px;
+  border: 1px solid #DDD;
 
-    table tbody tr:hover td {
-      color: #009;
-    }
+}
 
-    .bodyContent {
-      padding: 2rem 0rem;
-      line-height: 1.5;
-      max-width: 80rem;
-      margin: auto;
-    }
+table tbody tr:hover td {
+  color: #009;
+}
 
-    .toc {
-      width: auto;
-      padding: 2rem;
-    }
+.bodyContent {
+  padding: 2rem 0rem;
+  line-height: 1.5;
+  max-width: 80rem;
+  margin: auto;
+}
 
-    .content {
-      padding: 2rem 4rem;
-    }
+.toc {
+  width: auto;
+  padding: 2rem;
+}
+
+.content {
+  padding: 2rem 4rem;
+}
