@@ -1,6 +1,7 @@
 import * as Plot from "@observablehq/plot";
 
-const container = document.getElementById('graph-table1')
+const container = document.getElementById('mw-content-text')
+const table = document.getElementById('table1')
 
 let data = []
 let years = []
@@ -25,21 +26,24 @@ document.querySelectorAll('#table1 tbody tr').forEach((col, i) => {
           country = country.slice(0, country.indexOf("("))
       } else {
         let dataPoint = {}
-        dataPoint.country = country
-        dataPoint.years = years[j-1]
-        dataPoint.crimes = parseInt(row.textContent)
+        dataPoint.Country = country
+        dataPoint.Year = years[j-1]
+        dataPoint.Crimes = parseInt(row.textContent)
         data.push(dataPoint)
       }
     })
   }
 })
 
+console.table(data)
+
 const graph = Plot.plot({
-  color: {legend: true},
+  width: 800,
+  x: {type: "point"},
   marks: [
     Plot.ruleY([0]),
-    Plot.lineY(data, {x: "years", y: "crimes", stroke: "country", marker: true, tip: "x"})
+    Plot.lineY(data, {x: "Year", y: "Crimes", stroke: "Country", marker: true, tip: "x"})
   ]
 })
 
-container.append(graph)
+container.insertBefore(graph, table);
