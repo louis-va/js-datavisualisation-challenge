@@ -16,7 +16,7 @@ let data = []
 
 function formatTime(time) {
   let hours = time.getHours()
-  let minutes = time.getMinutes()
+  let minutes = (time.getMinutes() < 10) ? '0' + time.getMinutes() : time.getMinutes()
   let seconds = (time.getSeconds() < 10) ? '0' + time.getSeconds() : time.getSeconds()
   return hours + ':' + minutes + ':' + seconds
 }
