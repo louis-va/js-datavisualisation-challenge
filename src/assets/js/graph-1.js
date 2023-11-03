@@ -35,8 +35,6 @@ document.querySelectorAll('#table1 tbody tr').forEach((col, i) => {
   }
 })
 
-console.table(data)
-
 const graph = Plot.plot({
   width: 800,
   x: {type: "point"},

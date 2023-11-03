@@ -26,7 +26,7 @@ document.querySelectorAll('#table2 tbody tr').forEach((col) => {
 const graph = Plot.plot({
   marginBottom: 100,
   width: 800,
-  fx: {padding: 0, tickRotate: 90, tickSize: 6},
+  fx: {padding: 0, tickRotate: 45, tickSize: 6},
   x: {axis: null, paddingOuter: 0.2},
   y: {grid: true},
   color: {legend: true},
